@@ -1,0 +1,278 @@
+.best-sell {
+  margin: 8rem 0 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.best-ban {
+  margin-left: 4%;
+
+  @media only screen and (max-width: $bp-xxlrg) {
+    margin-left: 1%;
+  }
+}
+
+.best-wrap {
+  margin-top: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $bp-lrg) {
+    justify-content: flex-start;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    justify-content: center;
+  }
+}
+
+.best-card {
+  height: 40rem;
+  width: 40rem;
+  background-color: $black;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+
+  @media only screen and (max-width: $bp-xxlrg) {
+    height: 34rem;
+    width: 34rem;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    height: 28rem;
+    width: 28rem;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    height: 40rem;
+    width: 40rem;
+  }
+
+  &-1 {
+    margin-right: 4.4rem;
+
+    @media only screen and (max-width: $bp-lrg) {
+      margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-med) {
+      margin-right: 0;
+    }
+  }
+
+  &-2 {
+    margin-right: 4.4rem;
+
+    @media only screen and (max-width: $bp-lrg) {
+      margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-med) {
+      margin-top: 4rem;
+      margin-right: 0;
+    }
+  }
+
+  &-3 {
+    @media only screen and (max-width: $bp-med) {
+      margin-top: 4rem;
+    }
+  }
+
+  // CARD IMAGE
+  &-img {
+    @media only screen and (max-width: $bp-xxlrg) {
+      height: 24rem;
+      width: 34rem;
+    }
+
+    @media only screen and (max-width: $bp-lrg) {
+      height: 18rem;
+      width: 28rem;
+    }
+
+    @media only screen and (max-width: $bp-med) {
+      height: 30rem;
+      width: 40rem;
+    }
+  }
+
+  // PRODUCT LEFT CARD BANNER
+  &-product-left {
+    margin-bottom: -4rem;
+    width: 12rem;
+    height: 4rem;
+    background-color: $black;
+    font-size: 2rem;
+    letter-spacing: 3.33px;
+    font-weight: 300;
+    text-transform: uppercase;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    align-self: flex-start;
+
+    -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+
+    &-hat {
+    }
+
+    &-belt {
+    }
+
+    &-glasses {
+    }
+  }
+
+  // BOTTOM TAB STYLES
+  &-tab {
+    width: 40rem;
+    height: 10rem;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-xxlrg) {
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: $bp-xxlrg) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: $bp-xlrg) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 1.8rem;
+    }
+
+    // BOTTOM TAB BUTTON
+    &-btn {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      padding: 0.5rem 2rem;
+      border: 1px solid $color-primary;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      &:focus {
+        transform: translateY(2px);
+      }
+    }
+
+    &-hat {
+    }
+
+    &-belt {
+    }
+
+    &-glasses {
+    }
+  }
+}
+
+//////////////////////////////////
+// OFFERS
+//////////////////////////////////
+.offers {
+  margin: 6rem 0 10rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.offers-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.free-ship {
+  margin-right: 8rem;
+  transition: opacity 0.3s;
+
+  @media only screen and (max-width: $bp-xxlrg) {
+    width: 55rem;
+    height: 23.8rem;
+    margin-right: 2.5rem;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    width: 43rem;
+    height: 18.6rem;
+    margin-right: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    width: 55rem;
+    height: 23.8rem;
+    margin: 5rem 0 3rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    width: 40rem;
+    height: 17.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.discount {
+  transition: opacity 0.3s;
+
+  @media only screen and (max-width: $bp-xxlrg) {
+    width: 55rem;
+    height: 23.8rem;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    width: 43rem;
+    height: 18.6rem;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    width: 55rem;
+    height: 23.8rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    width: 40rem;
+    height: 17.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}

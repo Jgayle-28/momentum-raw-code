@@ -1,0 +1,305 @@
+//////////////////////////////////
+// TOP NAV BAR
+//////////////////////////////////
+.nav {
+  width: 100%;
+  height: 4rem;
+  background-color: $black-1;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stickynav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-wrapper {
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-sm) {
+    width: 95%;
+  }
+}
+
+.social {
+  a {
+    transition: opacity 0.3s ease-in;
+  }
+
+  a:hover {
+    opacity: 0.7;
+    transform: translateY(-5px) scale(1.1);
+  }
+
+  a:not(:last-child) {
+    padding-right: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.menu {
+  margin-right: auto;
+  margin-left: auto;
+
+  a {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: $white;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    @media only screen and (max-width: $bp-med) {
+      padding-left: 0.7rem;
+    }
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
+  a:not(:last-child) {
+    padding-right: 1rem;
+
+    border-right: 1px solid rgba($white, 0.9);
+
+    @media only screen and (max-width: $bp-med) {
+      padding-right: 0.7rem;
+    }
+  }
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-img {
+    @media only screen and (max-width: $bp-sm) {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}
+
+.item-count {
+  display: inline-block;
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: $color-primary;
+  color: $black;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//////////////////////////////////
+// HERO SECTION
+//////////////////////////////////
+.hero {
+  width: 100%;
+  height: 95.3vh;
+  background-image: url(../img/hero6.png);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#002c2d, 0.2),
+      rgba(#002c2d, 0.2)
+    ),
+    url(../img/hero6.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media only screen and (max-width: $bp-lrg) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#002c2d, 0.2),
+        rgba(#002c2d, 0.2)
+      ),
+      url(../img/hero6-med.png);
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#002c2d, 0.2),
+        rgba(#002c2d, 0.2)
+      ),
+      url(../img/hero6-sm.png);
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    height: 93.8vh;
+  }
+}
+
+.logo {
+  img {
+    margin-top: 2%;
+    margin-left: 20%;
+
+    @media only screen and (max-width: $bp-xxlrg) {
+      width: 50rem;
+      height: 24.5rem;
+      margin-left: 9%;
+    }
+
+    @media only screen and (max-width: $bp-xlrg) {
+      width: 45rem;
+      height: 22rem;
+      margin-left: 10%;
+    }
+
+    @media only screen and (max-width: $bp-xlrg) {
+      width: 30rem;
+      height: 14.7rem;
+      margin-top: 13%;
+      margin-left: 7%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      width: 18rem;
+      height: 8.8rem;
+      margin-top: 2%;
+      margin-left: 2%;
+    }
+  }
+}
+
+.slogan {
+  display: block;
+  width: 40rem;
+  padding: 5rem 6rem;
+  margin-top: 8.3%;
+  margin-left: 30.5%;
+  border: 2px solid $color-primary;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% 17%,
+    98% 17%,
+    98% 92%,
+    100% 92%,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% 17%,
+    98% 17%,
+    98% 92%,
+    100% 92%,
+    100% 100%,
+    0 100%
+  );
+
+  @media only screen and (max-width: $bp-xxlrg) {
+    margin-top: 4.3%;
+    margin-left: 21%;
+
+    -webkit-clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% 22%,
+      98% 22%,
+      98% 88%,
+      100% 88%,
+      100% 100%,
+      0 100%
+    );
+    clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% 22%,
+      98% 22%,
+      98% 88%,
+      100% 88%,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  @media only screen and (max-width: $bp-xlrg) {
+    width: 35rem;
+    padding: 3rem 4rem;
+    margin-top: 10.7%;
+    margin-left: 20.5%;
+  }
+
+  @media only screen and (max-width: $bp-ipt) {
+    margin-top: 9.5%;
+    margin-left: 16.8%;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    padding: 2.5rem 3rem;
+    width: 28rem;
+    margin-top: 11.5%;
+    margin-left: 9%;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    background-color: rgba($color-primary-dark-1, 0.5);
+    border: 1px solid $color-primary;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: 5%;
+    margin-left: 32%;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    margin-top: 40%;
+    margin-left: 16%;
+  }
+
+  img {
+    @media only screen and (max-width: $bp-xxlrg) {
+      width: 32.5rem;
+      height: 17.1rem;
+    }
+
+    @media only screen and (max-width: $bp-xlrg) {
+      width: 28rem;
+      height: 13.7rem;
+    }
+
+    @media only screen and (max-width: $bp-lrg) {
+      width: 23rem;
+      height: 11.2rem;
+    }
+  }
+}

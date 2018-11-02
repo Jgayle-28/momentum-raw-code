@@ -1,0 +1,383 @@
+.merch {
+  margin: 10rem 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.merch-ban {
+  margin-left: 4%;
+
+  @media only screen and (max-width: $bp-xxlrg) {
+    margin-left: 1%;
+  }
+}
+
+.products {
+  margin-top: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  height: 30rem;
+  width: 30rem;
+  transition: all 0.7s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-xxlrg) {
+    height: 25rem;
+    width: 25rem;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    margin-top: 2rem;
+  }
+
+  &-shirts {
+    transition: all 0.7s;
+  }
+
+  // TITLE IMG
+  &-title {
+    margin-bottom: -2.5rem;
+    z-index: 100;
+  }
+
+  // TITLE BORDERS
+  &-title-border {
+    width: 18rem;
+    height: 4.5rem;
+    border: 2px solid $color-primary;
+    transition: all 0.4s;
+    z-index: 100;
+
+    &-shirts {
+      cursor: pointer;
+
+      -webkit-clip-path: polygon(
+        0 0,
+        10% 0%,
+        10% 80%,
+        90% 80%,
+        90% 0%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+      clip-path: polygon(
+        0 0,
+        10% 0%,
+        10% 80%,
+        90% 80%,
+        90% 0%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+    }
+
+    &-pants {
+      -webkit-clip-path: polygon(
+        0 0,
+        13% 0%,
+        13% 80%,
+        87% 80%,
+        87% 0%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+      clip-path: polygon(
+        0 0,
+        13% 0%,
+        13% 80%,
+        87% 80%,
+        87% 0%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+    }
+
+    &-hats {
+      -webkit-clip-path: polygon(
+        0 0,
+        20% 0%,
+        20% 80%,
+        80% 80%,
+        80% 0%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+      clip-path: polygon(
+        0 0,
+        20% 0%,
+        20% 80%,
+        80% 80%,
+        80% 0%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+    }
+
+    &-bling {
+      -webkit-clip-path: polygon(
+        0 0,
+        15% 0%,
+        15% 80%,
+        85% 80%,
+        85% 0%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+      clip-path: polygon(
+        0 0,
+        15% 0%,
+        15% 80%,
+        85% 80%,
+        85% 0%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+    }
+  }
+
+  // SHIRTS -----------------------------
+  &-shirts {
+    background-image: linear-gradient(
+        rgba($color-primary-dark-1, 0.5),
+        rgba($color-primary-dark-1, 0.5)
+      ),
+      url(../img/products/prod-shirt.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-xlrg) {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-lrg) {
+      margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      margin-right: 0;
+    }
+
+    &:before {
+      content: '';
+      background-image: linear-gradient(
+          rgba($color-primary, 0.7),
+          rgba($color-primary, 0.7)
+        ),
+        url(../img/products/prod-shirt.png);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 0.7s;
+    }
+
+    &:hover {
+      transform: scale(0.98);
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  // PANTS -----------------------------
+  &-pants {
+    background-image: linear-gradient(
+        rgba($color-primary-dark-1, 0.5),
+        rgba($color-primary-dark-1, 0.5)
+      ),
+      url(../img/products/prod-pants.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-xlrg) {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-lrg) {
+      margin-right: 0;
+    }
+
+    @media only screen and (max-width: $bp-med) {
+      margin-right: 0;
+    }
+
+    &:before {
+      content: '';
+      background-image: linear-gradient(
+          rgba($color-primary, 0.7),
+          rgba($color-primary, 0.7)
+        ),
+        url(../img/products/prod-pants.png);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.7s;
+    }
+
+    &:hover {
+      transform: scale(0.98);
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  // HATS -----------------------------
+  &-hats {
+    background-image: linear-gradient(
+        rgba($color-primary-dark-1, 0.5),
+        rgba($color-primary-dark-1, 0.5)
+      ),
+      url(../img/products/prod-hat.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-xlrg) {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-lrg) {
+      margin-right: 3rem;
+      margin-top: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      margin-right: 0;
+    }
+
+    &:before {
+      content: '';
+      background-image: linear-gradient(
+          rgba($color-primary, 0.7),
+          rgba($color-primary, 0.7)
+        ),
+        url(../img/products/prod-hat.png);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.7s;
+    }
+
+    &:hover {
+      transform: scale(0.98);
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  // BLING / ACCESSORIES -----------------------------
+  &-bling {
+    background-image: linear-gradient(
+        rgba($color-primary-dark-1, 0.5),
+        rgba($color-primary-dark-1, 0.5)
+      ),
+      url(../img/products/prod-acc.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+    @media only screen and (max-width: $bp-lrg) {
+      margin-top: 3rem;
+    }
+
+    &:before {
+      content: '';
+      background-image: linear-gradient(
+          rgba($color-primary, 0.7),
+          rgba($color-primary, 0.7)
+        ),
+        url(../img/products/prod-acc.png);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.7s;
+    }
+
+    &:hover {
+      transform: scale(0.98);
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// HOVER STATES
+
+.product-shirts:hover .product-title-border-shirts {
+  height: 0;
+  transform: scale(0);
+  border: 0;
+}
+
+.product-pants:hover .product-title-border-pants {
+  height: 0;
+  transform: scale(0);
+  border: 0;
+}
+
+.product-hats:hover .product-title-border-hats {
+  height: 0;
+  transform: scale(0);
+  border: 0;
+}
+
+.product-bling:hover .product-title-border-bling {
+  height: 0;
+  transform: scale(0);
+  border: 0;
+}

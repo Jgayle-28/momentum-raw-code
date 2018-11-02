@@ -1,0 +1,76 @@
+// COLOR VARIABLES
+$color-primary-light: #01f8fb;
+$color-primary: #00d8da;
+$color-primary-dark: #06afb1;
+$color-primary-dark-1: #002c2d;
+
+$black: #212121;
+$black-1: #191919;
+
+$white: #ffffff;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+// RESPONSIVE BREAKPOINTS
+$bp-xxxlrg: 112.5em; //1800px - WIDE DESKTOP
+$bp-xxlrg: 100em; //1600px - WIDE - HD DESKTOP
+$bp-xlrg: 75em; //1200px - HD DESKTOP
+$bp-ipt: 64em; //1200px - HD DESKTOP
+$bp-lrg: 62.5em; //1000px - TAB-LAND
+$bp-ml: 56.25; //900px - IN BETWEEN FOR TAB
+$bp-med: 50em; //800px - TAB-PORT
+$bp-sm: 37.5em; //600 - PHONE
+
+// FONT VARIABLES
+$font-primary: 'Lato', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% -> 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-primary;
+  line-height: 1.6;
+  background-color: $white;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+.product-wrapper {
+  width: 80%;
+
+  @media only screen and (max-width: $bp-xxlrg) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: $bp-xlrg) {
+    width: 95%;
+  }
+}
+
+.top {
+  background-image: url(../img/topography.svg);
+}
