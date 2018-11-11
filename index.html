@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400"
+      rel="stylesheet"
+    />
 
     <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- MAIN STYLE SHEETS -->
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
     <title>Momentum</title>
   </head>
-  <body class="container">
 
+  <body class="container">
     <!-- TOP BAR / NAVIGATION -->
     <nav class="nav" id="#nav">
       <div class="nav-wrapper">
-
         <!-- SOCIAL -->
         <div class="social">
           <!-- Facebook -->
-          <a href="#"target="_blank"><img src="img/Face.svg"  alt="Facebook"></a>
+          <a href="#" target="_blank"
+            ><img src="img/Face.svg" alt="Facebook"
+          /></a>
           <!-- Twitter -->
-          <a href="https://twitter.com/Jg_Dezigns"><img src="img/Twit.svg" target="_blank" alt="Twitter"></a>
+          <a href="https://twitter.com/Jg_Dezigns"
+            ><img src="img/Twit.svg" target="_blank" alt="Twitter"
+          /></a>
           <!-- Instagram -->
-          <a href="https://www.instagram.com/jerehme.gayle/"><img src="img/Insta.svg" target="_blank" alt="Instagram"></a>
+          <a href="https://www.instagram.com/jerehme.gayle/"
+            ><img src="img/Insta.svg" target="_blank" alt="Instagram"
+          /></a>
         </div>
 
         <!-- MENU / LINKS -->
         <div class="menu">
-          <!-- <a href="#hero" class="scroll">Home</a> -->
           <a href="#merch" class="scroll">Merch</a>
           <a href="#about" class="scroll">About</a>
           <a href="#social" class="scroll">Social</a>
@@ -45,207 +55,268 @@
 
         <!-- CART -->
         <div class="cart">
-          <img src="img/cart.svg" class="cart-img" alt="cart-icon">
+          <img src="img/cart.svg" class="cart-img" alt="cart-icon" />
           <span class="item-count" id="item-count">1</span>
         </div>
       </div>
-
     </nav>
     <section class="top">
-    <!-- HERO SECTION -->
-    <section class="hero" id="hero">
-
-      <!-- HERO LOGO -->
-      <div class="logo" data-aos="fade-down" data-aos-duration="1200">
-        <img src="img/Logo.svg" alt="">
-      </div>
-
-      <!-- HERO SLOGAN -->
-      <div class="slogan" data-aos="fade-right" data-aos-duration="1200" >
-        <img src="img/slogan-svg.svg" alt="">
-      </div>
-
-    </section>
-
-    <!-- MERCH -->
-    <section class="merch" id="merch">
-      <div class="product-wrapper">
-
-        <!-- MERCHANDISE BANNER -->
-        <div class="merch-ban" data-aos="fade-up" data-aos-duration="1200">
-          <h1><img src="img/merch-ban.svg" alt="Mechandise" class="merch-ban"></h1>   
+      <!-- HERO SECTION -->
+      <section class="hero" id="hero">
+        <!-- HERO LOGO -->
+        <div class="logo" data-aos="fade-down" data-aos-duration="1200">
+          <img src="img/Logo.svg" alt="" />
         </div>
 
-        <!-- PRODUCT CATEGORIES / WRAPPER FOR PRODUCTS -->
-        <div class="products">
+        <!-- HERO SLOGAN -->
+        <!-- Removed from hd desktop & laptop because too many variables -->
+        <div class="slogan"><img src="img/slogan-svg.svg" alt="" /></div>
+      </section>
 
-          <!-- SHIRT -->
-          <div class="product product-shirts" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1800">
-            <h2 class="product-title"><img src="img/products/shirts.svg" alt="Shirts"></h2>
-            <div class="product-title-border product-title-border-shirts"></div>
-            <!-- <div class="product-shirts-overlay"></div> -->
+      <!-- MERCH -->
+      <section class="merch" id="merch">
+        <div class="product-wrapper">
+          <!-- MERCHANDISE BANNER -->
+          <div class="merch-ban" data-aos="fade-up" data-aos-duration="1200">
+            <h1>
+              <img src="img/merch-ban.svg" alt="Mechandise" class="merch-ban" />
+            </h1>
           </div>
 
-          <!-- PANTS -->
-          <div class="product product-pants" data-aos="fade-right" data-aos-duration="1200">
-            <h2 class="product-title"><img src="img/products/pants.svg" alt="Pants"></h2> 
-            <span class="product-title-border product-title-border-pants"></span>
-          </div>
-
-          <!-- HATS -->
-          <div class="product product-hats" data-aos="fade-left" data-aos-duration="1200">
-            <h2 class="product-title"><img src="img/products/hats.svg" alt="Hats"></h2>
-            <div class="product-title-border product-title-border-hats"></div>
-          </div>
-
-          <!-- BLING -->
-          <div class="product product-bling" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1800">
-            <h2 class="product-title"><img src="img/products/bling.svg" alt="Accessories"></h2>
-            <div class="product-title-border product-title-border-bling"></div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- BEST SELLERS -->
-    <section class="best-sell" id="best-sell">
-      <div class="product-wrapper">
-
-        <!-- BEST SELLING BANNER -->
-        <div class="best-ban" data-aos="fade-up" data-aos-duration="1200">
-          <h1><img src="img/best-ban.svg" alt="Best Sellers" class="best-ban"></h1>   
-        </div>
-
-        <!-- BEST PRODUCTS -->
-        <div class="best-wrap">
-          
-          <!-- TLD HAT -->
-          <div class="best-card best-card-1" data-aos="fade-right" data-aos-duration="1800">
-            <!-- PRODUCT LEFT -->
-            <span class="best-card-product-left best-card-product-left-hat">5 Left</span>
-            <!-- PRODUCT IMAGE -->
-            <img src="img/products/tld-hat.png" alt="TLD hat" class="best-card-img">
-
-            <!-- CARD BOTTOM TAB -->
-            <div class="best-card-tab best-card-tab-hat">
-              <p>Troy lee snap back</p>
-              <a href="#best-sell" class="best-card-tab-btn">Add to cart</a>
+          <!-- PRODUCT CATEGORIES / WRAPPER FOR PRODUCTS -->
+          <div class="products">
+            <!-- SHIRT -->
+            <div
+              class="product product-shirts"
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-duration="1800"
+            >
+              <h2 class="product-title">
+                <img src="img/products/shirts.svg" alt="Shirts" />
+              </h2>
+              <div
+                class="product-title-border product-title-border-shirts"
+              ></div>
             </div>
-          </div>
 
-          <!-- FOX BELT -->
-          <div class="best-card best-card-2" data-aos="fade-up" data-aos-duration="1800">
-            <!-- PRODUCT LEFT -->
-            <span class="best-card-product-left best-card-product-left-hat">9 Left</span>
-            <!-- PRODUCT IMAGE -->
-            <img src="img/products/fox-belt.png" alt="Fox belt" class="best-card-img">
-                        
-            <!-- CARD BOTTOM TAB -->
-            <div class="best-card-tab best-card-tab-belt">
-              <p>Fox racing leather belt</p>
-              <a href="#best-sell" class="best-card-tab-btn">Add to cart</a>
+            <!-- PANTS -->
+            <div
+              class="product product-pants"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
+              <h2 class="product-title">
+                <img src="img/products/pants.svg" alt="Pants" />
+              </h2>
+              <span
+                class="product-title-border product-title-border-pants"
+              ></span>
             </div>
-          </div>
 
-          <!-- OAKLEY GLASSES -->
-          <div class="best-card best-card-3" data-aos="fade-left" data-aos-duration="1800">
-            <!-- PRODUCT LEFT -->
-            <span class="best-card-product-left best-card-product-left-hat">3 Left</span>
-            <!-- PRODUCT IMAGE -->
-            <img src="img/products/oaks.png" alt="Fox belt" class="best-card-img">
+            <!-- HATS -->
+            <div
+              class="product product-hats"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+            >
+              <h2 class="product-title">
+                <img src="img/products/hats.svg" alt="Hats" />
+              </h2>
+              <div class="product-title-border product-title-border-hats"></div>
+            </div>
 
-            <!-- CARD BOTTOM TAB -->
-            <div class="best-card-tab best-card-tab-belt">
-              <p>Oakley Holbrook glasses</p>
-              <a href="#best-sell" class="best-card-tab-btn">Add to cart</a>
+            <!-- BLING -->
+            <div
+              class="product product-bling"
+              data-aos="fade-left"
+              data-aos-delay="100"
+              data-aos-duration="1800"
+            >
+              <h2 class="product-title">
+                <img src="img/products/bling.svg" alt="Accessories" />
+              </h2>
+              <div
+                class="product-title-border product-title-border-bling"
+              ></div>
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- BEST SELLERS -->
+      <section class="best-sell" id="best-sell">
+        <div class="product-wrapper">
+          <!-- BEST SELLING BANNER -->
+          <div class="best-ban" data-aos="fade-up" data-aos-duration="1200">
+            <h1>
+              <img src="img/best-ban.svg" alt="Best Sellers" class="best-ban" />
+            </h1>
+          </div>
 
-      </div>
-    </section>
+          <!-- BEST PRODUCTS -->
+          <div class="best-wrap">
+            <!-- TLD HAT -->
+            <div
+              class="best-card best-card-1"
+              data-aos="fade-right"
+              data-aos-duration="1800"
+            >
+              <!-- PRODUCT LEFT -->
+              <span class="best-card-product-left best-card-product-left-hat"
+                >5 Left</span
+              >
+              <!-- PRODUCT IMAGE -->
+              <img
+                src="img/products/tld-hat.png"
+                alt="TLD hat"
+                class="best-card-img"
+              />
 
-    <!-- OFFERS / styles are in _best.scss-->
-    <section class="offers" id="offers">
-      <div class="product-wrapper">
+              <!-- CARD BOTTOM TAB -->
+              <div class="best-card-tab best-card-tab-hat">
+                <p>Troy lee snap back</p>
+                <a href="#best-sell" class="best-card-tab-btn">Add to cart</a>
+              </div>
+            </div>
 
-        <div class="offers-wrap">
-          <!-- FREE SHIPPING -->
-          <img src="img/Free.png" alt="free shipping qualifying orders" class="free-ship">
-          <!-- DISCOUNT -->
-          <img src="img/Discount.png" alt="discounts" class="discount">
+            <!-- FOX BELT -->
+            <div
+              class="best-card best-card-2"
+              data-aos="fade-up"
+              data-aos-duration="1800"
+            >
+              <!-- PRODUCT LEFT -->
+              <span class="best-card-product-left best-card-product-left-hat"
+                >9 Left</span
+              >
+              <!-- PRODUCT IMAGE -->
+              <img
+                src="img/products/fox-belt.png"
+                alt="Fox belt"
+                class="best-card-img"
+              />
+
+              <!-- CARD BOTTOM TAB -->
+              <div class="best-card-tab best-card-tab-belt">
+                <p>Fox racing leather belt</p>
+                <a href="#best-sell" class="best-card-tab-btn">Add to cart</a>
+              </div>
+            </div>
+
+            <!-- OAKLEY GLASSES -->
+            <div
+              class="best-card best-card-3"
+              data-aos="fade-left"
+              data-aos-duration="1800"
+            >
+              <!-- PRODUCT LEFT -->
+              <span class="best-card-product-left best-card-product-left-hat"
+                >3 Left</span
+              >
+              <!-- PRODUCT IMAGE -->
+              <img
+                src="img/products/oaks.png"
+                alt="Fox belt"
+                class="best-card-img"
+              />
+
+              <!-- CARD BOTTOM TAB -->
+              <div class="best-card-tab best-card-tab-belt">
+                <p>Oakley Holbrook glasses</p>
+                <a href="#best-sell" class="best-card-tab-btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFERS / styles are in _best.scss -->
+      <section class="offers" id="offers">
+        <div class="product-wrapper">
+          <div class="offers-wrap">
+            <!-- FREE SHIPPING -->
+            <img
+              src="img/Free.png"
+              alt="free shipping qualifying orders"
+              class="free-ship"
+            />
+            <!-- DISCOUNT -->
+            <img src="img/Discount.png" alt="discounts" class="discount" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL MEDIA -->
+      <section class="social-media" id="social">
+        <div class="product-wrapper">
+          <!-- BEST SELLING BANNER -->
+          <div class="social-ban">
+            <h1>
+              <img
+                src="img/social-ban.svg"
+                alt="Social media"
+                class="social-ban"
+              />
+            </h1>
+          </div>
         </div>
 
-      </div>
-    </section>  
+        <!-- SLIDER -->
+        <div class="slider">
+          <div class="slides">
+            <!-- SLIDE 1 -->
+            <div class="slide">
+              <img src="img/social/social-1.png" alt="social media 1" />
+            </div>
 
-    <!-- SOCIAL MEDIA -->
-    <section class="social-media" id="social">
-      <div class="product-wrapper">
-        <!-- BEST SELLING BANNER -->
-        <div class="social-ban">
-          <h1><img src="img/social-ban.svg" alt="Social media" class="social-ban"></h1>   
+            <!-- SLIDE 2 -->
+            <div class="slide">
+              <img src="img/social/social-2.png" alt="social media 2" />
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="slide">
+              <img src="img/social/social-3.png" alt="social media 3" />
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="slide">
+              <img src="img/social/social-4.png" alt="social media 4" />
+            </div>
+
+            <!-- SLIDE 5 -->
+            <div class="slide">
+              <img src="img/social/social-5.png" alt="social media 5" />
+            </div>
+
+            <!-- SLIDE 5 -->
+            <div class="slide">
+              <img src="img/social/social-6.png" alt="social media 6" />
+            </div>
+
+            <!-- SLIDE 5 -->
+            <div class="slide">
+              <img src="img/social/social-7.png" alt="social media 7" />
+            </div>
+
+            <!-- SLIDE 5 -->
+            <div class="slide">
+              <img src="img/social/social-8.png" alt="social media 8" />
+            </div>
+
+            <!-- SLIDE 9 -->
+            <div class="slide">
+              <img src="img/social/social-9.png" alt="social media 9" />
+            </div>
+          </div>
+          <div onclick="goLeft()" class="btnleft fa fas fa-chevron-left"></div>
+          <div
+            onclick="goRight()"
+            class="btnright fa fas fa-chevron-right"
+          ></div>
         </div>
-      </div>
-
-      <!-- SLIDER -->
-      <div class="slider">
-        <div class="slides">
-          
-          <!-- SLIDE 1 -->
-          <div class="slide">
-            <img src="img/social/social-1.png" alt="social media 1">
-          </div>
-
-          <!-- SLIDE 2 -->
-          <div class="slide">
-            <img src="img/social/social-2.png" alt="social media 2">
-          </div>
-
-          <!-- SLIDE 3 -->
-          <div class="slide">
-            <img src="img/social/social-3.png" alt="social media 3">
-          </div>
-
-          <!-- SLIDE 4 -->
-          <div class="slide">
-            <img src="img/social/social-4.png" alt="social media 4">
-          </div>
-
-          <!-- SLIDE 5 -->
-          <div class="slide">
-            <img src="img/social/social-5.png" alt="social media 5">
-          </div>
-
-          <!-- SLIDE 5 -->
-          <div class="slide">
-            <img src="img/social/social-6.png" alt="social media 6">
-          </div>
-
-          <!-- SLIDE 5 -->
-          <div class="slide">
-            <img src="img/social/social-7.png" alt="social media 7">
-          </div>
-
-          <!-- SLIDE 5 -->
-          <div class="slide">
-            <img src="img/social/social-8.png" alt="social media 8">
-          </div>
-
-          <!-- SLIDE 9 -->
-          <div class="slide">
-            <img src="img/social/social-9.png" alt="social media 9">
-          </div>
-
-        </div>
-        <div onclick ="goLeft()" class="btnleft fa fas fa-chevron-left"></div>
-        <div onclick = "goRight()" class="btnright fa fas fa-chevron-right"></div>
-      </div>
-
-    </section>
+      </section>
     </section>
 
     <!-- ABOUT -->
@@ -253,32 +324,31 @@
       <div class="about-wrap" data-aos="fade-up" data-aos-duration="1500">
         <!-- ABOUT BANNER -->
         <div class="about-ban">
-          <img src="img/about-ban.svg" alt="about Momentum">
+          <img src="img/about-ban.svg" alt="about Momentum" />
         </div>
 
         <!-- ABOUT PARAGRAPH -->
         <div class="about-paragraph">
-          <p>We hand pick every item so that we ensure 
-              that we provide only the best threads for 
-              you. We do all the searching so you don’t
-              have to, because we know you have more
-              important things to do like sending it.</p>
-            <h3>HAND PICKED BY RIDERS FOR RIDERS</h3>
+          <p>
+            We hand pick every item so that we ensure that we provide only the
+            best threads for you. We do all the searching so you don’t have to,
+            because we know you have more important things to do like sending
+            it.
+          </p>
+          <h3>HAND PICKED BY RIDERS FOR RIDERS</h3>
         </div>
       </div>
-
     </section>
 
     <!-- FOOTER -->
     <footer class="footer" id="footer">
       <div class="footer-wrap">
-
         <!-- FOOTER LINKS -->
         <div class="footer-menu">
           <div class="link-group">
             <a href="#hero" class="scroll">Home</a>
             <a href="#merch" class="scroll">Merch</a>
-            <a href="#best-sell" class="scroll">best sellers</a> 
+            <a href="#best-sell" class="scroll">best sellers</a>
           </div>
 
           <div class="link-group">
@@ -286,29 +356,33 @@
             <a href="#about" class="scroll">About</a>
             <a href="#contact" class="scroll">Contact</a>
           </div>
- 
         </div>
 
         <!-- COPYRIGHT -->
         <div class="footer-copy">
-                  <!-- SOCIAL -->
-        <div class="social">
+          <!-- SOCIAL -->
+          <div class="social">
             <!-- Facebook -->
-            <a href="#"target="_blank"><img src="img/Face.svg"  alt="Facebook"></a>
+            <a href="#" target="_blank"
+              ><img src="img/Face.svg" alt="Facebook"
+            /></a>
             <!-- Twitter -->
-            <a href="https://twitter.com/Jg_Dezigns"><img src="img/Twit.svg" target="_blank" alt="Twitter"></a>
+            <a href="https://twitter.com/Jg_Dezigns"
+              ><img src="img/Twit.svg" target="_blank" alt="Twitter"
+            /></a>
             <!-- Instagram -->
-            <a href="https://www.instagram.com/jerehme.gayle/"><img src="img/Insta.svg" target="_blank" alt="Instagram"></a>
+            <a href="https://www.instagram.com/jerehme.gayle/"
+              ><img src="img/Insta.svg" target="_blank" alt="Instagram"
+            /></a>
           </div>
 
           <p class="footer-copy-text">&copy; Copyright 2018 JG Dezigns</p>
         </div>
 
-
         <!-- SUBSCRIBE -->
         <div class="footer-sub">
           <p>subscribe for updates and sales</p>
-          <input type="text" class="footer-input">
+          <input type="text" class="footer-input" />
           <a class="footer-button">Subscribe</a>
         </div>
       </div>

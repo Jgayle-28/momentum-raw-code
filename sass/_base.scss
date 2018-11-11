@@ -15,7 +15,7 @@ $color-grey-light-2: #aaa;
 // RESPONSIVE BREAKPOINTS
 $bp-xxxlrg: 112.5em; //1800px - WIDE DESKTOP
 $bp-xxlrg: 100em; //1600px - WIDE - HD DESKTOP
-$bp-xlrg: 75em; //1200px - HD DESKTOP
+$bp-xlrg: 79.3em; //1200px - HD DESKTOP
 $bp-ipt: 64em; //1200px - HD DESKTOP
 $bp-lrg: 62.5em; //1000px - TAB-LAND
 $bp-ml: 56.25; //900px - IN BETWEEN FOR TAB
@@ -69,8 +69,4 @@ a:visited {
   @media only screen and (max-width: $bp-xlrg) {
     width: 95%;
   }
-}
-
-.top {
-  background-image: url(../img/topography.svg);
 }

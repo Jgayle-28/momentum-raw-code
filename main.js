@@ -15,8 +15,8 @@ const removeStickyNav = () => {
 };
 
 // SOCIAL SLIDER
-var slides = document.getElementsByClassName('slide');
-var index = 0;
+const slides = document.getElementsByClassName('slide');
+let index = 0;
 
 function goLeft() {
   if (index == 0) index = slides.length - 4;

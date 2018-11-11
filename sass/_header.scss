@@ -119,23 +119,18 @@
 .hero {
   width: 100%;
   height: 95.3vh;
-  background-image: url(../img/hero6.png);
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(#002c2d, 0.2),
-      rgba(#002c2d, 0.2)
-    ),
-    url(../img/hero6.png);
+  background-image: url(../img/hero-bg-xlrg.png);
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  // for bottom slanted hero img
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  @media only screen and (max-width: $bp-xlrg) {
+    background-image: url(../img/hero-bg-lrg.png);
+  }
 
   @media only screen and (max-width: $bp-lrg) {
     background-image: linear-gradient(
@@ -143,7 +138,7 @@
         rgba(#002c2d, 0.2),
         rgba(#002c2d, 0.2)
       ),
-      url(../img/hero6-med.png);
+      url(../img/hero-bg-tabport.png);
   }
 
   @media only screen and (max-width: $bp-med) {
@@ -156,7 +151,12 @@
   }
 
   @media only screen and (max-width: $bp-sm) {
-    height: 93.8vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#002c2d, 0.2),
+        rgba(#002c2d, 0.2)
+      ),
+      url(../img/hero-bg-mobile.png);
   }
 }
 
@@ -184,6 +184,14 @@
       margin-left: 7%;
     }
 
+    @media only screen and (max-width: $bp-lrg) {
+    }
+
+    @media only screen and (max-width: $bp-med) {
+      margin-top: 6%;
+      margin-left: 5%;
+    }
+
     @media only screen and (max-width: $bp-sm) {
       width: 18rem;
       height: 8.8rem;
@@ -197,10 +205,12 @@
   display: block;
   width: 40rem;
   padding: 5rem 6rem;
-  margin-top: 8.3%;
-  margin-left: 30.5%;
+  margin-top: 6.9%;
+  margin-left: 30.6%;
   border: 2px solid $color-primary;
+  opacity: 0;
 
+  // To center slogan in border
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,8 +238,8 @@
   );
 
   @media only screen and (max-width: $bp-xxlrg) {
-    margin-top: 4.3%;
-    margin-left: 21%;
+    margin-top: 1%;
+    margin-left: 22%;
 
     -webkit-clip-path: polygon(
       0 0,
@@ -256,50 +266,38 @@
   @media only screen and (max-width: $bp-xlrg) {
     width: 35rem;
     padding: 3rem 4rem;
-    margin-top: 10.7%;
-    margin-left: 20.5%;
+    margin-top: 2.5%;
+    margin-left: 21.7%;
   }
 
   @media only screen and (max-width: $bp-ipt) {
-    margin-top: 9.5%;
-    margin-left: 16.8%;
+    margin-top: 3.3%;
+    margin-left: 18%;
   }
 
   @media only screen and (max-width: $bp-lrg) {
     padding: 2.5rem 3rem;
-    width: 28rem;
-    margin-top: 11.5%;
-    margin-left: 9%;
-  }
-
-  @media only screen and (max-width: $bp-med) {
-    background-color: rgba($color-primary-dark-1, 0.5);
+    background-color: rgba($color-primary-dark-1, 0.7);
     border: 1px solid $color-primary;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    margin-top: 5%;
-    margin-left: 32%;
+    opacity: 1;
+    margin-left: 25%;
   }
 
   @media only screen and (max-width: $bp-med) {
-    margin-top: 40%;
-    margin-left: 16%;
+    margin-top: 35%;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    margin-top: 45%;
+    margin-left: 8%;
   }
 
   img {
     @media only screen and (max-width: $bp-xxlrg) {
       width: 32.5rem;
       height: 17.1rem;
-    }
-
-    @media only screen and (max-width: $bp-xlrg) {
-      width: 28rem;
-      height: 13.7rem;
-    }
-
-    @media only screen and (max-width: $bp-lrg) {
-      width: 23rem;
-      height: 11.2rem;
     }
   }
 }
